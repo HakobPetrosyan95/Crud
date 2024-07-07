@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.Header,.Footer{
+  text-align: center;
+  background-color: aqua;
+  font-size: 3rem;
+}
+nav{
+  background-color: burlywood;
+}
+nav a{
+  background-color: hsl(192, 61%, 83%);
+  margin: 5px 20px;
+  font-size: 1.5rem;
+  border:2px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 5px 10px;
+  &:hover{
+     background-color: hsl(239, 72%, 37%);
+     color: white;
+  }
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 1000px;
+  margin: 100px auto;
+  border: 1px solid #bbb;
+}
+
+td,
+th {
+  border: 1px solid #bbb;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.primary,.Delete{
+  font-size: 1.3rem;
+  margin: 5px 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.primary{
+  background-color: rgb(11, 189, 11);
+  &:hover{
+    background-color: rgb(3, 136, 3);
+    color: white;
+  }
+}
+.Delete{
+  background-color: rgb(238, 13, 13);
+  &:hover{
+    background-color: rgb(160, 12, 12);
+    color: white;
+  }
+}
+
+.EditUserPage,.AddUserPage {
+  position: relative;
+  width: 1000px;
+  margin: 100px auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid;
+  box-shadow: .5rem .5rem .5rem gray;
+}
+
+.EditUserPage button,.AddUserPage button{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.EditUserPage form,.AddUserPage form {
+  text-align: end;
+  font-size: 1.2rem;
+  width: 400px;
+  margin: auto;
+}
+
+.EditUserPage form .inputBox,.AddUserPage form .inputBox {
+  margin-top: 10px;
+  display: flex;
+  text-align: left;
+}
+
+.EditUserPage form .inputBox span,.AddUserPage form .inputBox span {
+  width: 100px;
+}
+
+.EditUserPage form input,.AddUserPage form input {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.EditUserPage form .primary {
+  width: 100px;
+  margin-top: 10px;
+  margin-right: 0;
+}
+
+.HomePages .primary_add{
+  background-color: rgb(138, 202, 231);
+  text-align: center;
+  padding: 40px 0;
+}
+
+.HomePages .primary_add button{
+  width: 200x;
+  padding:10px 25px ;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: hsl(258, 88%, 30%);
+  &:hover{
+    background-color: hwb(258 40% 7%);
+    color: black;
+    font-weight: bold;
+  }
+}
+.AddUserPage form .primary2{
+    background-color: chartreuse;
+    padding:8px 25px ;
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 200px;
+    cursor: pointer;
+    &:hover{
+      background-color: hwb(123 4% 23% / 0.87);
+      color: white;
+
+    }
+}
